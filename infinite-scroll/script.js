@@ -23,7 +23,6 @@ function updateCountApiUrl() {
 // Check if all images were loaded
 function imageLoaded() {
   imagesLoaded++;
-  // console.log(count);
   if (imagesLoaded === totalImages) {
     ready = true;
     loader.hidden = true;
@@ -73,7 +72,6 @@ async function getPhotos() {
   try {
     const response = await fetch(apiUrl);
     photosArray = await response.json();
-    console.log(count);
     displayPhotos();
   } catch (error) {
     // Catch errors here
