@@ -1,5 +1,5 @@
-const button = document.getElementById('button');
-const audioElement = document.getElementById('audio');
+const button = document.querySelector('#button');
+const audioElement = document.querySelector('#audio');
 const jokeText = document.querySelector('#joke')
 
 
