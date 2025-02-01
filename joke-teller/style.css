@@ -14,7 +14,7 @@ body {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   background: url('./robot.gif');
   background-size: contain;
@@ -34,6 +34,7 @@ button {
   border: none;
   border-radius: 25px;
   box-shadow: 2px 2px 20px 10pxr gba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
 }
 
 button:hover {

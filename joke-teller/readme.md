@@ -5,6 +5,9 @@ A Joke API passed on to Voice RSS
 https://www.voicerss.org/api/
 https://v2.jokeapi.dev/joke/
 
+Diagram:
+![image](Joke%20Teller%20Flowchart.png)
+
 
 ### voiceRSS.js
 This code snippet defines a JavaScript object called VoiceRSS. It's an object literal, which is a collection of key-value pairs. Each key in the object is a method (can be a property as well, but not in this snippet) that defines the behavior of the VoiceRSS object. Here's a breakdown:

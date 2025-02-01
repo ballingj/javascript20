@@ -34,10 +34,8 @@ async function getJokes() {
     // Assign One or Two Part Joke
     if (data.setup) {
       joke = `${data.setup} ... ${data.delivery}`;
-      // console.log(joke)
     } else {
       joke = data.joke;
-      // console.log(joke)
     }
     // Display the Joke
     jokeText.textContent = joke;
@@ -47,6 +45,7 @@ async function getJokes() {
     toggleButton();
   } catch (error) {
     // Catch Error Here
+    console.log("Whoops: ", error)
   }
 }
 
