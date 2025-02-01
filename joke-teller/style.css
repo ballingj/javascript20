@@ -56,7 +56,7 @@ button:disabled {
   /* color:crimson; */
   color: #ffff;
   font-weight: bold;
-  
+  margin: 10px;
 }
 
 /* Media Query: Tablet or smaller */
@@ -73,6 +73,5 @@ button:disabled {
 
   #joke {
     font-size: 1.2rem;
-    padding: 10px;
   }
 }
