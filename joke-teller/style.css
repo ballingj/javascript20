@@ -57,6 +57,7 @@ button:disabled {
   color: #ffff;
   font-weight: bold;
   margin: 10px;
+  padding: 10px;
 }
 
 /* Media Query: Tablet or smaller */

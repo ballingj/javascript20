@@ -28,28 +28,28 @@ const VoiceRSS = {
         case "caf":
           a = new Audio().canPlayType("audio/x-caf").replace("no", "");
       }
+      // This line checks if a is still false after the switch statement
       if (!a) throw `The browser does not support the audio codec ${e.c}`;
     }
   },
   _request(e) {
     const a = this._buildRequest(e),
-      t = this._getXHR();
-    (t.onreadystatechange = function () {
+    t = this._getXHR();
+    t.onreadystatechange = function () {
       if (4 == t.readyState && 200 == t.status) {
         if (0 == t.responseText.indexOf("ERROR")) throw t.responseText;
-        let e = t.responseText;
-        (audioElement.src = e),
-          (audioElement.onloadedmetadata = () => {
-            audioElement.play();
-          });
+        audioElement.src = t.responseText;
+        audioElement.onloadedmetadata = () => {
+          audioElement.play();
+        }; 
       }
-    }),
-      t.open("POST", "https://api.voicerss.org/", !0),
-      t.setRequestHeader(
+    };
+    t.open("POST", "https://api.voicerss.org/", !0);
+    t.setRequestHeader(
         "Content-Type",
         "application/x-www-form-urlencoded; charset=UTF-8"
-      ),
-      t.send(a);
+    );
+    t.send(a);
   },
   _buildRequest(e) {
     const a = e.c && "auto" != e.c.toLowerCase() ? e.c : this._detectCodec();
