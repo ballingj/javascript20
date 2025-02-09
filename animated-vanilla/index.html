@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <title>Animated Template</title>
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Nav Section -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <!-- Nav Left Side -->
+      <div class="nav-left">
+        <a href="#" class="nav-title">Design Jeff</a>
+        <!-- Hamburger Menu (Mobile) -->
+        <button class="menu-btn" onclick="toggleNavbar('example-collapse-navbar')">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <!-- Nav Right Side -->
+      <ul class="nav-links">
+        
+        <li><a href="#"><i class="fab fa-facebook"></i> <span>Share</span></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i> <span>Tweet</span></a></li>
+        <li><a href="#"><i class="fab fa-github"></i> <span>Star</span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <main>
+    <section class="hero">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1 data-aos="fade-up">Welcome your epiphany.</h1>
+        <p data-aos="fade-right" data-aos-delay="1000">Lorem ipsum dolor sit amet...</p>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+      <div class="container">
+        <div class="service-cards">
+          <!-- Card 1 -->
+          <div class="service-card" data-aos="fade-right" data-aos-delay="1200">
+            <div class="icon-container red-bg">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h6>I'm A Robot</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptatibus autem maxime expedita aspernatur
+              tempora.</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="1400">
+            <div class="icon-container blue-bg">
+              <i class="fas fa-atom"></i>
+            </div>
+            <h6>Atom Power</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quia nemo ex aut temporibus.</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="service-card" data-aos="fade-left" data-aos-delay="1200">
+            <div class="icon-container green-bg">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h6>Infinite Energy</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ipsa veritatis error ratione.</p>
+          </div>
+        </div>
+
+        <div class="service-text-section">
+          <div class="text-box" data-aos="zoom-in-right">
+            <div class="icon-container gray-bg">
+              <i class="fas fa-star"></i>
+            </div>
+            <h3>Trying New Things is Great!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, dolores? Saepe aspernatur necessitatibus
+              explicabo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At repellat obcaecati tenetur officia distinctio!
+            </p>
+            <a href="https://www.creative-tim.com/framework/tailwind-starter-kit">Check Tailwind Starter Kit!</a>
+          </div>
+          <div class="image-box" data-aos="flip-left" data-aos-delay="1000">
+            <img src="https://images.unsplash.com/photo-1738396845029-d2289026ec2b?q=80&w=1887&auto=format&fit=crop"
+              alt="More Than Meets The Eye">
+            <blockquote>
+              <h4>More Than Meets The Eye</h4>
+              <p>I feel like I've mentioned before that I'm a robot and that continues to be true, even to this day.</p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Services Section -->
+    
+    <!-- About Section -->
+    <section class="about">
+      <div class="about-background-shape">
+        <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 2560 100">
+          <polygon points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+      <div class="container">
+        <div class="about-content">
+          <!-- Image -->
+          <div class="about-image" data-aos="flip-right" data-aos-delay="1000">
+            <img src="https://images.unsplash.com/photo-1736117024365-c36ccb9f843d?q=80&w=1887&auto=format&fit=crop"
+              alt="About Image">
+          </div>
+          <!-- Text Box -->
+          <div class="about-text" data-aos="zoom-in-left">
+            <div class="icon-container pink-bg">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h3>A Growing Company</h3>
+            <p>The extension comes with three pre-built pages to help you get started faster. You can change the text and
+              images and you're good to go.</p>
+            <!-- List -->
+            <ul class="about-list">
+              <li>
+                <span class="icon-container light-pink-bg"><i class="fas fa-fingerprint"></i></span>
+                <h4>Carefully crafted components</h4>
+              </li>
+              <li>
+                <span class="icon-container light-pink-bg"><i class="fab fa-html5"></i></span>
+                <h4>Amazing page examples</h4>
+              </li>
+              <li>
+                <span class="icon-container light-pink-bg"><i class="far fa-paper-plane"></i></span>
+                <h4>Dynamic components</h4>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+    
+
+    <!-- Team Section -->
+    <section class="team">
+      <div class="container">
+        <div class="team-header">
+          <h2>Here are our heroes</h2>
+          <p>According to the National Oceanic and Atmospheric Administration, Ted Scambos, NSIDC lead scientist, puts the
+            potentially record maximum.</p>
+        </div>
+    
+        <div class="team-members">
+          <!-- Team Member 1 -->
+          <div class="team-card" data-aos="fade-in">
+            <img src="https://randomuser.me/api/portraits/men/78.jpg" alt="Ryan Thompson">
+            <h5>Ryan Thompson</h5>
+            <p>Web Developer</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-dribbble"></i></a>
+            </div>
+          </div>
+          <!-- Team Member 2 -->
+          <div class="team-card" data-aos="fade-in" data-aos-delay="400">
+            <img src="https://randomuser.me/api/portraits/women/40.jpg" alt="Romina Hadid">
+            <h5>Romina Hadid</h5>
+            <p>Marketing Specialist</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-google"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+          </div>
+          <!-- Team Member 3 -->
+          <div class="team-card" data-aos="fade-in" data-aos-delay="600">
+            <img src="https://randomuser.me/api/portraits/women/56.jpg" alt="Alexa Smith">
+            <h5>Alexa Smith</h5>
+            <p>UI/UX Designer</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-google"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <!-- Team Member 4 -->
+          <div class="team-card" data-aos="fade-in" data-aos-delay="800">
+            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Jenna Kardi">
+            <h5>Jenna Kardi</h5>
+            <p>Founder and CEO</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-dribbble"></i></a>
+              <a href="#"><i class="fab fa-google"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Team Section -->
+    
+    <!-- Contact Section -->
+    <section class="contact">
+      <div class="contact-background-shape">
+        <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 2560 100">
+          <polygon points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+      <div class="container">
+        <div class="contact-header">
+          <h2>Build Something</h2>
+          <p>Put the potentially record low maximum sea ice extent this year down to low ice. According to the National
+            Oceanic and Atmospheric Administration, Ted Scambos.</p>
+        </div>
+    
+        <div class="contact-items">
+          <div class="contact-card" data-aos="fade-in" data-aos-delay="800">
+            <div class="icon-container">
+              <i class="fas fa-medal"></i>
+            </div>
+            <h5>Excellent Services</h5>
+            <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="contact-card" data-aos="fade-in" data-aos-delay="600">
+            <div class="icon-container">
+              <i class="fas fa-poll"></i>
+            </div>
+            <h5>Grow Your Market</h5>
+            <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="contact-card" data-aos="fade-in" data-aos-delay="400">
+            <div class="icon-container">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h5>Launch Time</h5>
+            <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="contact-form" data-aos="fade-up">
+      <div class="container">
+        <h4>Want to Work With Us?</h4>
+        <p>Complete this form and we will get back to you in 24 hours.</p>
+        <form>
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" placeholder="Your Name">
+    
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Your Email">
+    
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="Type a message..."></textarea>
+    
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <!-- End of Contact Section -->
+  </main>
+
+
+  <footer class="footer">
+    <div class="footer-background-shape">
+      <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 2560 100">
+        <polygon points="2560 0 2560 100 0 100"></polygon>
+      </svg>
+    </div> 
+    <div class="container">
+      <div class="footer-content">
+        <!-- Contact Info -->
+        <div class="footer-contact">
+          <h4>Let's keep in touch!</h4>
+          <h5>Find us on any of these platforms, we respond in 1-2 business days.</h5>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-dribbble"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <!-- Useful Links -->
+        <div class="footer-links">
+          <div class="link-column">
+            <span>Useful Links</span>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Github</a></li>
+              <li><a href="#">Free Products</a></li>
+            </ul>
+          </div>
+          <div class="link-column">
+            <span>Other Resources</span>
+            <ul>
+              <li><a href="#">MIT License</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom">
+        <p>Copyright © 2024 by <a href="#">Your Company</a>.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./script.js"></script>
+  
+  <!-- Navigation Script -->
+  <script src="./navbar.js"></script>
+
+</body>
+
+</html>
